@@ -1,0 +1,36 @@
+body,
+body.dark {
+	--app-bg: black;
+	--app-color: white;
+
+	--win-border: white;
+	--win-header-color: lightgrey;
+	--win-header-bg: darkgrey;
+	--win-bg: darkgrey;
+
+	--win-close: red;
+	--win-minify: orange;
+	--win-maximize: green;
+
+	--button-bg: darkblue;
+	--button-bg--hover: blue;
+	--button-color: white;
+}
+
+body {
+	background: var(--app-bg);
+	color: var(--app-color);
+	display: flex;
+	padding: 1em;
+}
+
+button {
+	background: var(--button-bg);
+	border: 2px;
+	color: var(--button-color);
+	padding: 0.8em 1em;
+}
+
+button:hover {
+	background: var(--button-bg--hover);
+}
